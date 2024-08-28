@@ -22,3 +22,10 @@ if st.button('Criar Gráfico de Disperssaão'):
 
     st.plotly_chart(fig, use_container_width = True)
 
+# Caixa de seleção para criar um gráfico de dispersão
+if st.checkbox('Criar Gráfico de Dispersão'):
+    st.write('Criando um gráfico de dispersão para o conjunto de dados de anúncios de vendas de carros')
+    
+    fig = px.scatter(car_data, x='odometer', y='price', title='Gráfico de Dispersão de Odometer vs Preço')
+    
+    st.plotly_chart(fig, use_container_width=True)
