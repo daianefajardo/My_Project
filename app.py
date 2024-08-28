@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-car_data = pd.read_csv(r'C:\Users\daian\Documents\GitHub\My_Project\vehicles.csv') # Carregar os dados do CSV
+car_data = pd.read_csv(r'vehicles.csv') # Carregar os dados do CSV
 
 st.header('Analise de Dados de Carros') # Cabeçalho do aplicativo
 
